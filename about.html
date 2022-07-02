@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>биографија | Filip Naskovski</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/about.css">
+
+</head>
+<body onload="themeChecker()">
+<header id="header">
+    <p id="logo">Filip <b>Naskovski</b></p>
+
+    <nav>
+        <a href="index.html">почетна</a>
+        <a style="width: 120px"  href="about.html"><b>биографија</b></a>
+        <a href="resume.html">резиме</a>
+        <a href="contact.html" id="contact_bt">контакт</a>
+
+        <span id="button_group">
+            <button id="theme_toggle" onclick="darkmode()">
+                <img class="dark icon" alt="dark mode icon" src="img/icons/dark_mode.svg">
+                <img class="light icon" alt="light mode icon" src="img/icons/light_mode.svg">
+            </button>
+            <button id="language_bt" onclick="toggleOverlay('lang_overlay')">
+                <img class="dark icon" alt="language icon" src="img/icons/language_dark.svg">
+                <img class="light icon" alt="language icon" src="img/icons/language_light.svg">
+                <script type="text/javascript" src="scripts/overlay.js"></script>
+            </button>
+          </span>
+    </nav>
+
+
+
+    <script type="text/javascript" src="scripts/appearance.js"></script>
+
+    <div id="lang_overlay" class="popup">
+        <a href="about.html"><img src="img/mk.webp" alt="Flag of the Republic of Macedonia">Македонски</a><br>
+        <a href="en/about.html"><img src="img/gb.webp" alt="Flag of Great Britain">English</a>
+    </div>
+
+</header>
+<div class="banner">
+    <h1>биографија</h1>
+</div>
+<section id="content">
+    <div class="wcontainer">
+        <div class="half_container" id="photo_container">
+            <img src="img/filip.jpg" class="circle" alt="Photo of Filip">
+        </div>
+        <div class="half_container" id="about">
+            <h1>Здраво, Јас сум Филип</h1>
+            <p>
+                Јас сум студент на <b>Факултетот за Информатички Науки и Компјутерско Инженерство</b>, при УКИМ, Скопје, Република Македонија, на насока <b>Софтверско Инженерство и Информациски Системи</b>. Имам учествувано на повеќе натпревари во областа на информатика, во мојата земја. Ме интересира како работат нештата.
+            </p>
+            <p>
+                Роден сум на 24 август 2002 во Куманово, каде посетував основно училиште во ОУ "Христијан Карпош", и завршив средно училиште во  ОСТУ "Наве Буѓони". Претставувајќи ги и двете мои училишта имам освоено повеќе награди за кои можете да прочитате во моето
+                <a href="resume.html">резиме</a>
+            </p>
+            <p>
+                Ако сакате да стапите во контакт со мене, направете го тоа од <a href="contact.html">страната за контакт</a>
+            </p>
+
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wcontainer">
+        <div>
+            <h1>Контакт</h1>
+            <span><img class="icon" alt="phone icon" src="img/icons/call_light.svg"> +389 70 223 305</span><br>
+            <span><img class="icon" alt="mail icon" src="img/icons/mail_light.svg"> filip.naskovski.1@students.finki.mk</span>
+        </div>
+    </div>
+    <a href="#" id="top_button" title="Back to top"><img class="large_icon" src="img/icons/expand_less_light.svg" alt="back to top button"></a>
+    <p>&copy; 2022 Filip Naskovski</p>
+</footer>
+
+</body>
+</html>

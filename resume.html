@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <title>резиме | Filip Naskovski</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/resume.css">
+
+</head>
+<body onload="themeChecker()">
+<header id="header">
+    <p id="logo">Filip <b>Naskovski</b></p>
+
+    <nav>
+        <a href="index.html">почетна</a>
+        <a style="width: 120px" href="about.html">биографија</a>
+        <a href="resume.html"><b>резиме</b></a>
+        <a href="contact.html" id="contact_bt">контакт</a>
+
+        <span id="button_group">
+            <button id="theme_toggle" onclick="darkmode()">
+                <img class="dark icon" alt="dark mode icon" src="img/icons/dark_mode.svg">
+                <img class="light icon" alt="light mode icon" src="img/icons/light_mode.svg">
+            </button>
+            <button id="language_bt" onclick="toggleOverlay('lang_overlay')">
+                <img class="dark icon" alt="language icon" src="img/icons/language_dark.svg">
+                <img class="light icon" alt="language icon" src="img/icons/language_light.svg">
+                <script type="text/javascript" src="scripts/overlay.js"></script>
+            </button>
+          </span>
+    </nav>
+
+
+
+    <script type="text/javascript" src="scripts/appearance.js"></script>
+
+    <div id="lang_overlay" class="popup">
+        <a href="resume.html"><img src="img/mk.webp" alt="Flag of the Republic of Macedonia">Македонски</a><br>
+        <a href="en/resume.html"><img src="img/gb.webp" alt="Flag of Great Britain">English</a>
+    </div>
+
+</header>
+<div class="banner">
+    <h1>резиме</h1>
+</div>
+<div id="content">
+
+        <article id="education">
+            <h1>Образование</h1>
+            <span>ОСТУ "Наце Буѓони", Куманово, Македонија<br>Компјутерска Техника и Автоматика</span>
+
+            <span>Факултет за Информатички Науки и Компјутерско Инженерство, Скопје, Македонија<br>
+                Софтверско Инженерство и Информациски Системи</span>
+        </article>
+
+        <article id="experience">
+        <h1>Работно Искуство</h1>
+
+            <span>"ДБС - Компјутери" - Куманово<br>2019-2020 (Пракса)</span>
+            <div>
+                <ul>
+                    <li>Сервисирање на компјутери и компјутерска галантерија</li>
+                    <li>Дијагностика на дефекти</li>
+                    <li>Инсталирање на оперативни системи</li>
+                    <li>Работа по работен налог</li>
+                </ul>
+            </div>
+
+            <span>"Термалифт" - Куманово<br>2019 (Пракса)</span>
+            <div>
+                <ul>
+                    <li>Одржување, поправка и монтажа на батерии на виљушкари</li>
+                    <li>Тестирање на исправност и капацитет на батерии</li>
+                    <li>Дијагностика на дефекти во електроника на виљушкари</li>
+                </ul>
+            </div>
+        </article>
+
+        <article id="skills">
+            <h1>Вештини</h1>
+                <span>C/C++</span>
+                <span>HTML, CSS, JavaScript</span>
+                <span>Microsoft Azure Fundamentals</span>
+                <span>Microsoft Office</span>
+        </article>
+
+        <article id="aw_cer">
+            <h1>Награди</h1>
+            <span>Прво Место - Microsoft Office Specialist</span>
+            <span>3та Награда - Државен Натпревар по Информатика (Програмирање)</span>
+            <span>...</span>
+            <h1>Сертификати</h1>
+            <span>Microsoft Word Expert (Office 2016)</span>
+            <span>Microsoft Certified: Azure Fundamentals</span>
+            <div>
+                <a href="https://www.credly.com/badges/bc2bb19c-96e6-4619-89d0-56438da52b3f/public_url" target="_blank" title="Click Me"><img src="img/badge-azure.png" alt="Microsoft Certified: Azure Fundamentals" class="badge"></a>
+                <a href="https://www.credly.com/badges/751cd82e-43b8-4f08-826f-60198e67015d/public_url" target="_blank" title="Click Me"><img src="img/badge-word.png" alt="Microsoft Word Expert (Office 2016)" class="badge"></a>
+            </div>
+        </article>
+
+</div>
+
+<footer>
+    <div class="wcontainer">
+        <div>
+            <h1>Контакт</h1>
+            <span><img class="icon" alt="phone icon" src="img/icons/call_light.svg"> +389 70 223 305</span><br>
+            <span><img class="icon" alt="mail icon" src="img/icons/mail_light.svg"> filip.naskovski.1@students.finki.mk</span>
+        </div>
+    </div>
+    <a href="#" id="top_button" title="Back to top"><img class="large_icon" src="img/icons/expand_less_light.svg" alt="back to top button"></a>
+    <p>&copy; 2022 Filip Naskovski</p>
+</footer>
+
+</body>
+</html>
