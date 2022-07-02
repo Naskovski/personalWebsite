@@ -1,0 +1,82 @@
+#welcome h1{
+    margin: 0;
+    font-size: 6em;
+    font-weight: lighter;
+}
+
+#welcome .txt_container{
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    padding-left: 10%;
+}
+#welcome{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/welcome_bg_light.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+#dp{
+    width: 450px;
+    max-width: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+
+#welcome #down_button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+}
+
+#about h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.half_container p{
+    margin: auto 25px;
+    text-align: justify;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+#about{
+    scroll-behavior: smooth;
+}
+
+#about p:first-letter{
+    font-size: 2rem;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+
+}
+
+#awards{
+    flex-direction: column;
+    padding: 3rem;
+}
+
+#awards h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+
+}
+
+#awards p{
+    text-align: center;
+}
+
+.darkmode #welcome{
+    background-image: url("../img/welcome_bg_dark.jpg");
+}

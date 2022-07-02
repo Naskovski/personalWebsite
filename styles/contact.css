@@ -1,0 +1,41 @@
+#content .wcontainer{
+    height: calc(100vh - 15rem);
+    min-height: 30rem;
+}
+
+#content .half_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact_info a{
+    text-decoration: none;
+}
+
+#email_adress_picker{
+    background-color: #ffffff00;
+    padding: 12px 0;
+    margin: 8px 0;
+    border: 0;
+}
+
+.wrapper{
+    padding-bottom: 0;
+}
+
+#mail_form{
+    padding-top: 0  ;
+}
+
+@media only screen and (max-width: 90vh){
+    .wcontainer{
+        height: auto;
+    }
+    .half_container{
+        height: auto;
+        max-height: 70vh;
+    }
+
+}

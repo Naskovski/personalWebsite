@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact | Filip Naskovski</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+
+</head>
+<body onload="themeChecker()">
+<header id="header">
+    <p id="logo">Filip <b>Naskovski</b></p>
+
+    <nav>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="resume.html">résumé</a>
+        <a href="contact.html" id="contact_bt"><b>contact</b></a>
+
+        <span id="button_group">
+            <button id="theme_toggle" onclick="darkmode()">
+                <img class="dark icon" alt="dark mode icon" src="../img/icons/dark_mode.svg">
+                <img class="light icon" alt="light mode icon" src="../img/icons/light_mode.svg">
+            </button>
+            <button id="language_bt" onclick="toggleOverlay('lang_overlay')">
+                <img class="dark icon" alt="language icon" src="../img/icons/language_dark.svg">
+                <img class="light icon" alt="language icon" src="../img/icons/language_light.svg">
+                <script type="text/javascript" src="../scripts/overlay.js"></script>
+            </button>
+          </span>
+    </nav>
+
+
+
+    <script type="text/javascript" src="../scripts/appearance.js"></script>
+
+    <div id="lang_overlay" class="popup">
+        <a href="../contact.html"><img src="../img/mk.webp" alt="Flag of the Republic of Macedonia">Македонски</a><br>
+        <a href="contact.html"><img src="../img/gb.webp" alt="Flag of Great Britain">English</a>
+    </div>
+
+</header>
+<div class="banner">
+    <h1>contact</h1>
+</div>
+<section id="content">
+    <div class="wcontainer">
+        <div class="half_container" id="contact_info">
+                <span>
+                    <img class="light icon" alt="phone icon" src="../img/icons/call_light.svg">
+                    <img class="dark icon" alt="phone icon" src="../img/icons/call_dark.svg">
+                     +389 70 223 305
+                </span>
+                    <br>
+                <a href="mailto:filip.naskovski.hk@gmail.com">
+                    <img class="light icon" alt="mail icon" src="../img/icons/mail_light.svg">
+                    <img class="dark icon" alt="mail icon" src="../img/icons/mail_dark.svg">
+                     filip.naskovski.hk@gmail.com
+                </a>
+                <br>
+                <a href="mailto:filip.naskovski.1@students.finki.mk">
+                    <img class="light icon" alt="mail icon" src="../img/icons/mail_light.svg">
+                    <img class="dark icon" alt="mail icon" src="../img/icons/mail_dark.svg">
+                     filip.naskovski.1@students.finki.mk
+                </a>
+        </div>
+        <div class="half_container pattern">
+            <h1>Message me! from here</h1>
+            <div class="wrapper">
+                <span>Mail </span>
+                <fieldset id="email_adress_picker">
+                    <label><input type="radio" id="gmail" name="mail" value="gmail" onclick="sendTo('mailto:filip.naskovski.hk@gmail.com')"> Gmail</label>
+                    <label><input type="radio" id="outlook" name="mail" value="outlook" onclick="sendTo('mailto:filip.naskovski.1@students.finki.mk')"> FINKI</label>
+                </fieldset>
+            </div>
+
+            <form id="mail_form" action="" method="get" enctype="text/plain" name="mail_form" target="_blank">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject of your message...">
+                <label>Message
+                    <textarea name="body" id="body" placeholder="Enter your message..."></textarea>
+                </label>
+                <button name="submit" >Send
+                <img class="icon" alt="send icon" src="../img/icons/send_dark.svg">
+                </button>
+            </form>
+            <script src="../scripts/mailing.js"></script>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="wcontainer">
+        <div>
+            <h1>Contact</h1>
+            <span><img class="icon" alt="phone icon" src="../img/icons/call_light.svg"> +389 70 223 305</span><br>
+            <span><img class="icon" alt="mail icon" src="../img/icons/mail_light.svg"> filip.naskovski.1@students.finki.mk</span>
+        </div>
+    </div>
+    <a href="#" id="top_button" title="Back to top"><img class="large_icon" src="../img/icons/expand_less_light.svg" alt="back to top button"></a>
+    <p>&copy; 2022 Filip Naskovski</p>
+</footer>
+
+</body>
+</html>

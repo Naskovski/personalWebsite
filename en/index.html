@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filip Naskovski</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/homepage.css">
+
+</head>
+<body onload="themeChecker()">
+    <header id="header">
+        <p id="logo">Filip <b>Naskovski</b></p>
+
+        <nav>
+          <a href="about.html">about</a>
+          <a href="resume.html">résumé</a>
+          <a href="contact.html" id="contact_bt">contact</a>
+
+          <span id="button_group">
+            <button id="theme_toggle" onclick="darkmode()">
+                <img class="dark icon" alt="dark mode icon" src="../img/icons/dark_mode.svg">
+                <img class="light icon" alt="light mode icon" src="../img/icons/light_mode.svg">
+            </button>
+            <button id="language_bt" onclick="toggleOverlay('lang_overlay')">
+                <img class="dark icon" alt="language icon" src="../img/icons/language_dark.svg">
+                <img class="light icon" alt="language icon" src="../img/icons/language_light.svg">
+                <script type="text/javascript" src="../scripts/overlay.js"></script>
+            </button>
+          </span>
+        </nav>
+
+
+
+        <script type="text/javascript" src="../scripts/appearance.js"></script>
+
+        <div id="lang_overlay" class="popup">
+            <a href="../index.html"><img src="../img/mk.webp" alt="Flag of the Republic of Macedonia">Македонски</a><br>
+            <a href="index.html"><img src="../img/gb.webp" alt="Flag of Great Britain">English</a>
+        </div>
+
+    </header>
+    <section id="welcome">
+        <div class="txt_container">
+            <p>Hello! I am</p>
+            <h1>Filip<br>Naskovski</h1>
+        </div>
+        <img class="circle" alt="A photo of Filip" src="../img/filip.jpg" id="dp">
+
+
+        <a href="#about" id="down_button">Scroll down to see more</a>
+    </section>
+
+    <section class="wcontainer" id="about">
+        <div class="half_container">
+            <h1>About Me</h1>
+        </div>
+        <div class="half_container">
+            <p>
+                I am a student at the Faculty of Computer Science and Engineering, Skopje, currently studying software engineering and informations systems. Read more about me <a href="about.html">here</a>.
+            </p>
+        </div>
+    </section>
+
+    <section class="wcontainer" id="awards">
+        <h1>Certifications, Awards & Experience</h1>
+        <p>You can read more about my awards and cerftifications in my <a href="#">résumé</a>.</p>
+        <div id="badge_collage" class="photo_overlap_3" >
+            <a href="resume.html">
+                <img src="../img/badge-azure.png" alt="Microsoft Certified: Azure Fundamentals">
+                <img src="../img/badge-word.png" alt="Microsoft Word Expert (Office 2016)">
+                <img src="../img/badge-azure-silhouette.png" alt="Microsoft Certified: Silhouette">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="wcontainer">
+            <div>
+                <h1>Contact</h1>
+                <span><img class="icon" alt="phone icon" src="../img/icons/call_light.svg"> +389 70 223 305</span><br>
+                <span><img class="icon" alt="mail icon" src="../img/icons/mail_light.svg"> filip.naskovski.1@students.finki.mk</span>
+            </div>
+        </div>
+        <a href="#" id="top_button" title="Back to top"><img class="large_icon" src="../img/icons/expand_less_light.svg" alt="back to top button"></a>
+        <p>&copy; 2022 Filip Naskovski</p>
+    </footer>
+
+</body>
+</html>
