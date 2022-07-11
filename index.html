@@ -30,7 +30,6 @@
         </nav>
 
 
-
         <script type="text/javascript" src="scripts/appearance.js"></script>
 
         <div id="lang_overlay" class="popup">
@@ -38,11 +37,41 @@
             <a href="en/index.html"><img src="img/gb.webp" alt="Flag of Great Britain">English</a>
         </div>
 
+        <button id="hamburger_bt" onclick="toggleOverlay('hamburger_menu')">
+            <img class="dark icon" alt="language icon" src="img/icons/menu_light.svg">
+            <img class="light icon" alt="language icon" src="img/icons/menu_dark.svg">
+        </button>
+
+        <div id="hamburger_menu">
+
+            <button id="close_menu" onclick="toggleOverlay('hamburger_menu')">
+                <img class="dark icon" alt="language icon" src="img/icons/close_light.svg">
+                <img class="light icon" alt="language icon" src="img/icons/close_dark.svg">
+            </button>
+
+            <nav>
+                <a href="about.html">биографија</a>
+                <a href="resume.html">резиме</a>
+                <a href="contact.html" >контакт</a>
+
+
+                <button  onclick="darkmode()">
+                    <img class="dark icon" alt="dark mode icon" src="img/icons/dark_mode.svg">
+                    <span class="dark"> dark mode</span>
+                    <img class="light icon" alt="light mode icon" src="img/icons/light_mode.svg">
+                    <span class="light"> light mode</span>
+                </button>
+
+                <a href="en/index.html" id="lang"><img src="img/gb.webp" alt="Flag of Great Britain"> English</a>
+
+            </nav>
+        </div>
+
     </header>
     <section id="welcome">
         <div class="txt_container">
             <p>Здраво! Јас сум</p>
-            <h1>Филип<br>Насковкси</h1>
+            <h1>Филип<br>Насковски</h1>
         </div>
         <img class="circle" alt="A photo of Filip" src="img/filip.jpg" id="dp">
 

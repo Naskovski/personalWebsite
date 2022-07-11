@@ -15,7 +15,7 @@
         <a href="index.html">home</a>
         <a href="about.html"><b>about</b></a>
         <a href="resume.html">résumé</a>
-        <a href="contact.html" id="contact_bt">contact</a>
+        <a href="contact.html"  id="contact_bt">contact</a>
 
         <span id="button_group">
             <button id="theme_toggle" onclick="darkmode()">
@@ -37,6 +37,37 @@
     <div id="lang_overlay" class="popup">
         <a href="../about.html"><img src="../img/mk.webp" alt="Flag of the Republic of Macedonia">Македонски</a><br>
         <a href="about.html"><img src="../img/gb.webp" alt="Flag of Great Britain">English</a>
+    </div>
+
+    <button id="hamburger_bt" onclick="toggleOverlay('hamburger_menu')">
+        <img class="dark icon" alt="language icon" src="../img/icons/menu_light.svg">
+        <img class="light icon" alt="language icon" src="../img/icons/menu_dark.svg">
+    </button>
+
+    <div id="hamburger_menu">
+
+        <button id="close_menu" onclick="toggleOverlay('hamburger_menu')">
+            <img class="dark icon" alt="language icon" src="../img/icons/close_light.svg">
+            <img class="light icon" alt="language icon" src="../img/icons/close_dark.svg">
+        </button>
+
+        <nav>
+            <a href="index.html">home</a>
+            <a href="about.html"><b>about</b></a>
+            <a href="resume.html">résumé</a>
+            <a href="contact.html">contact</a>
+
+
+            <button  onclick="darkmode()">
+                <img class="dark icon" alt="dark mode icon" src="../img/icons/dark_mode.svg">
+                <span class="dark"> dark mode</span>
+                <img class="light icon" alt="light mode icon" src="../img/icons/light_mode.svg">
+                <span class="light"> light mode</span>
+            </button>
+
+            <a href="../index.html" id="lang"><img src="../img/mk.webp" alt="Flag of the Republic of Macedonia"> Македонски</a>
+
+        </nav>
     </div>
 
 </header>
